@@ -25,7 +25,6 @@ print("Total requests made in the entire time period of the log: ", counter1)
 # 6 months prior to this would be 11/Apr/1995:14:14:17
 # the earliest log file within the last 6 months occured on 11/Apr/1995:14:14:19
 
-counter2 = 0
 
 date = '[11/Apr/1995:14:14:19 -0600]'
 with open(r'DataSet.txt', 'r') as file:
