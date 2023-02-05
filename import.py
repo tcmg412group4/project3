@@ -11,4 +11,4 @@ data.close()
 
 # The above portion imports the data from the webserver into a new .txt file called DataSet
 # The for loop prints out each new log into a new line to seperate logs
-# Once you run this program, will have a copy of the data in a text file on your local computer
+# Once you run this program, it will have a copy of the data in a text file on your local computer
