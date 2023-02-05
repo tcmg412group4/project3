@@ -6,33 +6,29 @@ with open(r"DataSet.txt", 'r') as tlines:
     print('Total lines:', x)
 
 
-
-
+#-----------------------------------------------------------------------------------
 
 
 # trying to code the 6 months data
 
 from datetime import datetime
+from datetime import date
 
 
-date = '[11/Oct/1995:14:14:17 -0600]'
-i = 0
+date_ = '[11/Oct/1995:14:14:17 -0600]'
 
 count = 0
 
-with open('DataSet.txt','r') as data: # open file and read data
-    if data.mode =='r':
-    contents = data.readlines() # read each line in the txt file
+format = '%d/%b/%Y'
+start_date = datetime.strptime('11/Oct/1995', format)
+end_date = datetime.strptime('11/Apr/1995', format)
 
-        # scan for the past 6 months
-    for contents in data:
-        sixmonths = contents.strftime("%d, %B, %y")
-        for i in sixmonths:
-            count += 1
-        if not date:
-            break
-        break
+with open('DataSet.txt','r') as data: # open file
+    contents = data.readlines() # read each line
 
+    # scan for the past 6 months
+    for i in f:
+        count += 1
 
 print("Total requests made in the last 6 months: ", count)
 
