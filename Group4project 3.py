@@ -5,9 +5,9 @@ d = open('DataSet.txt', 'r')
 counter1 = 0
 
 while True:
-    counter1 += 1
+    counter1 += 1           
 
-    line = d.readline()
+    line = d.readline()         # read each line and save it to a new file named 'line'
 
     if not line:
         break
