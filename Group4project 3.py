@@ -18,7 +18,7 @@ counter1 -= 1
 
 # The DataSet.txt file has one extra blank line at the end of the file which does not contain a log.     
 
-print("Total requests made in the entire log: ", counter1)
+print("Total requests made in the entire log:    ", counter1)
 
 
 # The last log was made on 11/Oct/1995:14:14:17
