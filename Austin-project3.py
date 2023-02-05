@@ -18,7 +18,7 @@ counter1 -= 1
 
 # the DataSet.txt file has one extra blank line at the end of the file which does not contain a log.     
 
-print("Total requests made in the entire time period of the log: ", counter1)
+print("Total requests made in the entire log: ", counter1)
 
 
 # the last log was made on 11/Oct/1995:14:14:17
@@ -33,7 +33,7 @@ with open(r'DataSet.txt', 'r') as file:
 
         if log.find(date) != -1:
 
-            print ('Total requests made in the last 6 months is: ', counter1 - logs.index(log) - 1)
+            print ('Total requests made in the last 6 months: ', counter1 - logs.index(log) - 1)
             # -1 is to count the log that gets excluded, as we subtract the counter in this for loop from the counter1 value
            
 
