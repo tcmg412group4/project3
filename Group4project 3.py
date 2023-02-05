@@ -2,10 +2,10 @@ d = open('DataSet.txt', 'r')
 
 #Opens the DataSet file which contains the log file imported from the URL using the import.py file
 
-counter1 = 0
+counter = 0
 
 while True:
-    counter1 += 1           
+    counter += 1           
 
     line = d.readline()         # read each line and save it to a new file named 'line'
 
@@ -14,11 +14,11 @@ while True:
 
 # While loop to count all the lines in the text file, as each line represents an individual log. Stores the count in the variable counter1
 
-counter1 -= 1
+counter -= 1
 
 # The DataSet.txt file has one extra blank line at the end of the file which does not contain a log.     
 
-print("Total requests made in the entire log:    ", counter1)
+print("Total requests made in the entire log:    ", counter)
 
 
 # The last log was made on 11/Oct/1995:14:14:17
@@ -33,7 +33,7 @@ with open(r'DataSet.txt', 'r') as file:
 
         if log.find(date) != -1:
 
-            print ('Total requests made in the last 6 months: ', counter1 - logs.index(log) - 1)
+            print ('Total requests made in the last 6 months: ', counter - logs.index(log) - 1)
             # -1 is to count the log that gets excluded, as we subtract the counter in this for loop from the counter1 value
            
 
